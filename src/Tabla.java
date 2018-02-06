@@ -1,18 +1,11 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Tabla {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
-	 tablaMultiplicar(); 
-		
-	}
 	
-	
-	public static void tablaMultiplicar (){
+	public void tablaMultiplicar() throws InputMismatchException, NumberFormatException {
 		
-		try{
+//		try{
 			Scanner lector = new Scanner (System.in); 
 
 		System.out.println("Tabla de multiplicar, de que numero?"); 
@@ -26,13 +19,20 @@ public class Tabla {
 				}
 			}
 		
-	}catch(NullPointerException e){
-		System.err.println("No puede ser de tipo nulo");
-	}catch(NumberFormatException e){
-		System.err.println("Tiene que ser obligatoriamente un numero");
+		/**
+		 * no es necesario utilizar los try y catch aqui, se utilizaran en el test de jUNit
+		 * , aqui pasaremos al metodo un throws de las exception que puede usar en el test
+		 */
+		
+//	}catch(NullPointerException e){
+//		System.err.println("No puede ser de tipo nulo");
+//	}catch(NumberFormatException e){
+//		System.err.println("Tiene que ser obligatoriamente un numero");
+//	}catch(InputMismatchException e){
+//		System.err.println("No coincide con lo que se está pidiendo");
 	}
 		
 	}
 		
 
-}
+//}
