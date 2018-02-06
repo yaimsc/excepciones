@@ -14,8 +14,10 @@ public class Test {
 			
 		}catch(InputMismatchException e){
 			System.err.println("No coincide con el formato que se está pidiendo");
+			fail("No coincide con el formato que se está pidiendo"); 
 		}catch(NumberFormatException e){
 			System.err.println("Tiene que ser un  numero entero"); 
+			fail("Tiene que ser un  numero entero"); 
 		}
 		
 	}
