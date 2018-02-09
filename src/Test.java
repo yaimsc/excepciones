@@ -18,6 +18,9 @@ public class Test {
 			System.err.println("No coincide con el formato que se está pidiendo");
 			
 		}
+	}
+		
+	public void test2() {
 		
 		try{
 			
@@ -32,5 +35,7 @@ public class Test {
 		}
 		
 	}
-
+	
 }
+
+
