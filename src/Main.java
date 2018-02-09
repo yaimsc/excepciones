@@ -6,7 +6,7 @@ public class Main {
 		
 		Tabla tabla = new Tabla(); 
 		
-		 tabla.tablaMultiplicar();
+		tabla.tablaMultiplicar();
 	}
 
 }

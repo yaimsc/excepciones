@@ -5,8 +5,8 @@ public class Tabla {
 	
 	public void tablaMultiplicar() throws InputMismatchException, NumberFormatException {
 		
-//		try{
-			Scanner lector = new Scanner (System.in); 
+
+		Scanner lector = new Scanner (System.in); 
 
 		System.out.println("Tabla de multiplicar, de que numero?"); 
 		
@@ -24,15 +24,7 @@ public class Tabla {
 		 * , aqui pasaremos al metodo un throws de las exception que puede usar en el test
 		 */
 		
-//	}catch(NullPointerException e){
-//		System.err.println("No puede ser de tipo nulo");
-//	}catch(NumberFormatException e){
-//		System.err.println("Tiene que ser obligatoriamente un numero");
-//	}catch(InputMismatchException e){
-//		System.err.println("No coincide con lo que se está pidiendo");
 	}
 		
 	}
 		
-
-//}
