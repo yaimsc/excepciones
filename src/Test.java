@@ -13,7 +13,7 @@ public class Test {
 			tabla.tablaMultiplicar();
 			
 			
-			fail("No coincide con el formato que se está pidiendo"); 
+			fail("Se esperaba excepcion InputMismatchExcepction"); 
 		}catch(InputMismatchException e){
 			System.err.println("No coincide con el formato que se está pidiendo");
 			
@@ -28,7 +28,7 @@ public class Test {
 			Tabla tabla = new Tabla(); 
 			tabla.tablaMultiplicar();
 			
-			fail("Tiene que ser un  numero entero"); 
+			fail("Se esperaba NumberFormatException"); 
 		}catch(NumberFormatException e){
 			System.err.println("Tiene que ser un  numero entero"); 
 			
