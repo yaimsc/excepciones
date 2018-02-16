@@ -3,6 +3,10 @@ import static org.junit.Assert.*;
 import java.util.InputMismatchException;
 
 public class Test {
+	
+	
+	
+	
 
 	@org.junit.Test
 	public void test() {
@@ -10,7 +14,8 @@ public class Test {
 		try{
 		
 			Tabla tabla = new Tabla(); 
-			tabla.tablaMultiplicar();
+			//tabla.tablaMultiplicar(5);
+			tabla.imprimir(7);
 			
 			
 			fail("Se esperaba excepcion InputMismatchExcepction"); 
@@ -20,13 +25,15 @@ public class Test {
 		}
 	}
 		
+	@org.junit.Test
 	public void test2() {
 		
 		try{
 			
 			
 			Tabla tabla = new Tabla(); 
-			tabla.tablaMultiplicar();
+			//tabla.tablaMultiplicar(5);
+			tabla.imprimir(5);
 			
 			fail("Se esperaba NumberFormatException"); 
 		}catch(NumberFormatException e){
